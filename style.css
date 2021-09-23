@@ -1,0 +1,405 @@
+    /* for mobile design */
+    /* navbar-start-from-here */
+    html{
+        scroll-behavior: smooth;
+    }
+*{
+    box-sizing: border-box;
+    font-family: Merriweather, sans;
+}
+body{
+    margin: 0;
+}
+.navbar{
+    padding: 5px 10px;
+    background-color: #00b894;
+    text-align: center;
+}
+img{
+    width: 80px;
+    margin: 0%;
+}
+h1{
+    font-size: 2.5rem;
+    color: white;
+    text-align: center;
+    margin-bottom: 0px;
+}
+h2{
+    text-align: center;
+}
+a{
+    text-decoration: none;
+    font-size: 1.3rem;
+    color: #304a63;
+}
+[class*="col-"]{
+    float: left;
+    padding: 10px;
+}
+[class*="col-"]{
+    width: 100%;
+}
+
+.navbar h1{
+    margin: 10px 0px;
+    padding-top: 10px;
+}
+.navbar-manu{
+    display: flex;
+    flex-direction: column;
+    text-transform: uppercase;
+}
+.navbar-manu a{
+    background-color: #4acdee;
+    border-radius: 10px;
+    margin: 10px 0;
+    padding:0 10px;
+}
+.navbar-manu a:hover{
+    background-color: gray;
+    color: white;
+}
+.navbar::after{
+    content: '';
+    display: table;
+    clear: left;
+}
+    /* navbar-ends-here */
+
+    /* profile design start from here */
+
+    /* backgroun-image */
+    .profile{
+        background-image: url(images/jj-ying.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    /* backgroud-image-end */
+p{
+    font-size: 1.2rem;
+    text-align: justify;
+}
+.profile{
+    padding: 100px 5px;
+    position: relative;
+    text-align: center;
+}
+.profile-desc h1{
+    font-family: satisfy;
+    font-size: 3.5rem;
+}
+.top-right-icon{
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    transition: transform 2s;
+}
+.top-right-icon:hover{
+    transform: rotate(360deg);
+}
+.bottom-left-icon{
+    position: absolute;
+    bottom: 10px;
+    left: 20px;
+    transition: transform 2s;
+}
+.bottom-left-icon:hover{
+    transform: rotate(360deg);
+}
+.profile-desc p{
+    color: gray;
+    text-align: center;
+    width: 85%;
+    margin: 30px auto 20px auto;
+}
+.profile::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+    /* profile ends here */
+
+    /* about me start here */
+.aboutme{
+    background-color: #01a3a4;
+    text-align: center;
+    padding: 10px 20px;
+    
+}
+.aboutme::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+.aboutme h2{
+    color: white;
+    font-size: 1.8rem;
+}
+.dotted-hr{
+    border: 5px dotted white;
+    border-bottom: none;
+    width: 100px;
+}
+.about-me-img img{
+    width: 200px;
+    height: 230px;
+    border: 5px solid white;
+    border-radius: 50%;
+}
+.about-me-desc p{
+    color: #304a63;
+    font-size: 1.2rem;
+    text-align: justify;
+    text-align: center;
+}
+.aboutme-hr{
+    width: 400px;
+    opacity: 0.5;
+}
+.cv-button{
+    background-color: peru;
+    color: whitesmoke;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+   
+}
+    /* about me ends here */
+
+        /* experience, education, skill part start from here */
+.professional-experience{
+    padding: 1% 0px;
+}
+
+.card-icon{
+    text-align: center;
+}
+.card-icon img{
+    width: 120px;
+    border: 5px solid white;
+    border-radius: 50%;
+}
+.card-title h2{
+    background-color: #616161;
+    text-align: center;
+    padding: 5px;
+    color: white;
+}
+.professional-experience .card{
+    background-color: #a39e9e;
+    border-radius: 10px;
+    padding: 10px;
+    transition: 0.3s;
+    height: 660px;
+}
+.professional-experience .card:hover{
+    box-shadow: 0 4px 8px 5px black;
+}
+.professional-experience::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+.skill-container li{
+    list-style-type: none;
+    margin: 30px 0;
+    padding: 10px 10px;
+    font-weight: bold;
+    text-transform: uppercase;
+    position: relative;
+}
+.skill-container li::before{
+    content: '';
+    position: absolute;
+    top: calc(100% + 5px);
+    background-color: rgb(230, 215, 215);
+    width: 100%;
+    height: 25px;
+    left: 0%;
+    border-radius: 1000px;
+    
+}
+.skill-container li::after{
+    content: '';
+    position: absolute;
+    top: calc(100% + 5px);
+    background-color: rgb(223, 215, 215);
+    width: 0;
+    height: 25px;
+    left: 0%;
+    border-radius: 1000px;
+    animation-duration: 2.3s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-delay: 1s;
+}
+.skill-container li.html::after{
+    animation-name: html;
+}
+@keyframes html{
+    100%{
+        width: 95%;
+        background-color: #e15c36;
+    }
+}
+.skill-container li.html::after{
+    animation-name: html;
+}
+@keyframes html{
+    100%{
+        width: 95%;
+        background-color: #e15c36;
+    }
+}
+.skill-container li.html::after{
+    animation-name: html;
+}
+@keyframes html{
+    100%{
+        width: 95%;
+        background-color: #e15c36;
+    }
+}
+.skill-container li.css::after{
+    animation-name: css;
+}
+@keyframes css{
+    100%{
+        width: 90%;
+        background-color: #0077BC;
+    }
+}
+.skill-container li.bootstrap::after{
+    animation-name: bootstrap;
+}
+@keyframes bootstrap{
+    100%{
+        width: 85%;
+        background-color: #0e2368;
+    }
+}
+.skill-container li.git::after{
+    animation-name: git;
+}
+@keyframes git{
+    100%{
+        width: 65%;
+        background-color: black;
+    }
+}
+.skill-container li.js::after{
+    animation-name: js;
+}
+@keyframes js{
+    100%{
+        width: 75%;
+        background-color: #e4b522;
+    }
+}
+.skill-container li.wp::after{
+    animation-name: wp;
+}
+@keyframes wp{
+    100%{
+        width: 50%;
+        background-color: #05698F;
+    }
+}
+        /* experience, education, skill part ends here */
+
+
+        /* achievement, contact starts from here */
+        /* background-image */
+
+.achievement-contact{
+    background: url(images/background-869596_640.png) no-repeat scroll;
+    
+}
+.achievement-contact{
+    padding: 1% 7%;
+    /* background-color: #74b9ff; */
+    color: rgb(243, 243, 243);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.achievement-contact p{
+    font-size: 1.5rem;
+    margin: 30px 0;
+}
+.contact{
+    text-align: center;
+}
+.contact input, textarea{
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 1rem;
+    text-align: center;
+    border: none;
+    resize: none;
+}
+.contact button{
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(245, 204, 100);
+    color: white;
+    padding: 10px;
+    width: 100px;
+    cursor: pointer;
+    margin: 10px 15px;
+}
+.contact button:hover{
+    box-shadow: 2px 3px 5px goldenrod;
+    background-color: rgb(248, 192, 48);
+}
+.contact-link{
+    text-align: center;
+}
+.media-button .btn{
+    font-size: 1.5rem;
+    border: none;
+    border-radius: 50%;
+    padding: 10px;
+    width: 50px;
+    margin: 3px;
+    cursor: pointer;
+    background-color: #74b9ff;
+}
+.contact-link .btn:hover{
+    background-color: white;
+    text-shadow: 2px 2px 3px cornflowerblue;
+}
+.achievement-contact::after{
+    content: '';
+    display: table;
+    clear: both;
+}    
+
+ /**** achievement, contact ends here ****/
+
+ /* footer-start-from-here */
+ .footer{
+    background-color: rgb(29, 28, 28);
+    color: white;
+    text-align: center;
+    padding: 15px;
+ }
+ .footer-manu a{
+     color: white;
+     display: block;
+     margin: 10px 0px;
+     font-size: 1.3rem;
+ }
+ .footer-manu a:hover{
+        text-decoration: underline white;
+}
+ .footer::after{
+     content: '';
+     display: table;
+     clear: both;
+ }
+ /* footer-ends-here */
